@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weddings Style With Splash of Color Makeup</title>
+    <!-- Bootstrap CSS -->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/mystyle.css">-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/cssstyle.css' %}">
+
+    <style>
+        .carousel-item {
+            height: 32rem
+        }
+
+        .marketing .col-lg-4 {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .marketing h2 {
+            font-weight: 400;
+        }
+
+        .featurette-heading {
+            font-weight: 300;
+            line-height: 1;
+            letter-spacing: -.05rem;
+        }
+
+        @media (min-width: 62em) {
+            .featurette-heading {
+                margin-top: 7rem;
+            }
+        }
+
+
+        @media (min-width: 40em) {
+            .featurette-heading {
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+      {% include 'regular_templates/navbar_header.html' %}
+
+    <div class="container marketing">
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette mt-10">
+            <h1 class="display-5 fw-bold text-center lh-2">Wedding Daries</h1>
+            <p class="lead text-center">"Talk a walk on the bride side"</p>
+            <hr class="featurette-divider">
+            <div class="col-md-7">
+                <h2 class="featurette-heading lh-2">Coffee, Contour and<br><span class="text-muted"> Confidence</span>
+                </h2>
+                <p class="lead">"On your wedding day, you should look like yourself at your most beautiful."</p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=""
+                    height="500" src="{% static 'images/serviceimg/weddingimg1.jpg' %}" focusable="false">
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading lh-2">Glowing skin <br><span class="text-muted">Oh yeah, it's that
+                        good.</span></h2>
+                <p class="lead">"Eyes that are windows to the soul, and lashes are the perfect pairs of curtaains."</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=""
+                    height="500" src="{% static 'images/serviceimg/weddingimg2.jpg' %}" focusable="false">
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading lh-2">And lastly, this one. <br><span class="text-muted">Shimmer and
+                        Shine.</span></h2>
+                <p class="lead">"Makeup is all about balance. When the eye makes a statement, the lips should be quite."
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width=""
+                    height="500" src="{% static 'images/serviceimg/weddingimg3.JPG' %}" focusable="false">
+                </img>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="text-center">
+                <p><a class="btn btn-lg btn-primary" href="/socmapp/contact">Book an Appointment</a></p>
+            </div>
+        </div>
+
+
+    </div>
+
+    {% include 'regular_templates/navbar_footer.html' %}
+
+    <!--End line-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<div class="card-body p-6">
+    <div class="mb-4">
+        <h2 class="mb-3">Book an Appointment</h2>
+        <p class="mb-1 font-22">We will get in touch shortly</p>
+        <p class="mb-0 font-14">
+            Mail us at: <span class="text-dark">splashofcolormakeup03@gmail.com </span>or
+            Send a request online by fill below form.
+        </p>
+    </div>
+    <form method="POST">
+      {% csrf_token %}
+        <div class="mb-3">
+            <input type="text" class="form-control " placeholder="Name" required="" name="name">
+        </div>
+        <div class="mb-3">
+            <input type="number"class="form-control " placeholder="Phone no." name='phone' required="">
+        </div>
+        <div class="mb-3">
+            <input type="email" class="form-control " placeholder="Email" name="email" required="">
+        </div>
+        <div class="mb-3">
+            <select class="form-select  mb-3" name="option">
+                <option selected="">Select Work</option>
+                <option value="Weddings">Weddings</option>
+                <option value="Glamour makeup">Glamour makeup</option>
+                <option value="Hair styling">Hair styling</option>
+                <option value="Baby Shower Makeup">Baby Shower Makeup</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input type="date" class="form-control" required="" name="date">
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-primary ">
+                Send request
+            </button>
+        </div>
+    </form>
+</div>
